@@ -1,0 +1,83 @@
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  margin: 60px auto;
+  max-width: 90%;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+
+h1 {
+  font-size: 96px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+.app-content {
+  text-align: left;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.navigation-buttons a,
+.app-button {
+  border: 1px solid var(--primary-color);
+  padding: 20px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.about-me-paragraph {
+  margin: 30px 0;
+}
+
+.about-me-column {
+  background-color: var(--secondary-color);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.button-1 {
+  background-color: var(--primary-color);
+  color: white;
+  box-shadow: var(--box-shadow);
+}
+
+.button-2,
+#back-to-homepage {
+  color: var(--primary-color);
+  margin-left: 40px;
+}
+
+#contact-me {
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+#contact-me:hover {
+  text-decoration: underline;
+}
