@@ -1,7 +1,15 @@
 :root {
-  --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
+  --primary-color: #5f85db;
+  --secondary-color: #4ecca3;
+  --light-color: #eeeeee;
+  --dark-color-1: #393e46;
+  --dark-color-2: #26282b;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  background-color: var(--dark-color-1);
+  color: var(--light-color);
 }
 
 .container {
@@ -29,8 +37,39 @@ h3 {
   opacity: 0.7;
 }
 
-.app-content {
-  text-align: left;
+.main-info {
+  padding: 200px 0px;
+}
+
+@media (max-width: 992px) {
+  .main-info {
+    padding: 50px 0px;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
+
+.navbar {
+  background-color: var(--dark-color-2);
+}
+
+.navbar-brand {
+  color: var(--primary-color);
+}
+
+.nav-link {
+  color: var(--secondary-color);
+}
+
+.active {
+  color: var(--light-color);
 }
 
 .navigation-buttons {

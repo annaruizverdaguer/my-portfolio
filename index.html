@@ -16,11 +16,24 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/cce3fc98a6.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
       <div class="container-fluid px-5">
-        <a class="navbar-brand" href="index.html">Anna Ruiz Verdaguer</a>
+        <a class="navbar-brand" href="index.html"
+          ><i
+            class="fa-solid fa-laptop-code"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          ></i>
+          Anna Ruiz Verdaguer</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -38,70 +51,101 @@
               >Home</a
             >
             <a class="nav-link" href="about-me.html">About Me</a>
+            <a class="nav-link" href="cv.html">Work Experience</a>
+            <a class="nav-link" href="hobbies.html">Hobbies and Interests</a>
             <a class="nav-link" href="about-me.html#contact-me">Contact Me</a>
           </div>
         </div>
       </div>
     </nav>
     <div class="container">
-      <h2>👋🏻 Hi there! I am</h2>
-      <h1>Anna Ruiz</h1>
-      <h3>👩‍💻 Front-end development apprentice, based in Barcelona.</h3>
-      <div class="navigation-buttons">
-        <a href="about-me.html#contact-me" class="button-1">Contact Me</a>
-        <a href="about-me.html" class="button-2">About Me</a>
-      </div>
-      <div class="row mt-5">
-        <div class="col-sm-6 app-photo">
-          <img src="images/yoga.png" alt="Yoga app" class="img-fluid rounded" />
-        </div>
-        <div class="col-sm-6 justify-content-start app-content">
-          <h2 class="mb-3">Yoga App</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-            eos eveniet alias temporibus deserunt veritatis minima fugiat
-            explicabo eum dolore.
-          </p>
-          <button class="app-button button-1 my-5">Launch Yoga App</button>
+      <div class="main-info">
+        <h2>👋🏻 Hi there! I am</h2>
+        <h1>Anna Ruiz</h1>
+        <h3>👩‍💻 Front-end development apprentice, based in Barcelona.</h3>
+        <div class="navigation-buttons">
+          <a href="about-me.html#contact-me" class="button-1">Contact Me</a>
+          <a href="about-me.html" class="button-2">About Me</a>
         </div>
       </div>
-      <div class="row mt-5">
-        <div class="col-sm-6 justify-content-start app-content">
-          <h2 class="mb-3">Weather App</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-            eos eveniet alias temporibus deserunt veritatis minima fugiat
-            explicabo eum dolore.
-          </p>
-          <button class="app-button button-1 my-5">Launch Weather App</button>
+      <div class="row">
+        <div class="col-lg-4 mt-5">
+          <div class="app-photo">
+            <img
+              src="images/pasapalabra.png"
+              alt="Pasapalabra"
+              class="img-fluid rounded shadow p-2 border border-dark border-3"
+            />
+          </div>
+          <div class="justify-content-start app-content">
+            <h2 class="my-3">Pasapalabra Game</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis quia, dignissimos nam ratione veniam quibusdam porro
+              omnis quam vel eos eveniet alias temporibus deserunt veritatis
+              minima fugiat explicabo eum dolore.
+            </p>
+            <form
+              action="https://gorgeous-babka-cf9dca.netlify.app/"
+              target="_blank"
+            >
+              <button class="app-button button-1 my-5">
+                Launch Pasapalabra Game
+              </button>
+            </form>
+          </div>
         </div>
-        <div class="col-sm-6 app-photo">
-          <img
-            src="images/weather.png"
-            alt="Weather app"
-            class="img-fluid rounded"
-          />
+        <div class="col-lg-4 mt-5">
+          <div class="justify-content-start app-content">
+            <div class="app-photo">
+              <img
+                src="images/weather-app.png"
+                alt="Weather app"
+                class="img-fluid rounded shadow p-2 border border-dark border-3"
+              />
+            </div>
+            <h2 class="my-3">Weather App</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis quia, dignissimos nam ratione veniam quibusdam porro
+              omnis quam vel eos eveniet alias temporibus deserunt veritatis
+              minima fugiat explicabo eum dolore.
+            </p>
+            <form
+              action="https://lively-scone-575ed6.netlify.app/"
+              target="_blank"
+            >
+              <button class="app-button button-1 my-5">
+                Launch Weather App
+              </button>
+            </form>
+          </div>
         </div>
-      </div>
-      <div class="row mt-5">
-        <div class="col-sm-6 app-photo">
-          <img
-            src="images/yogurt.png"
-            alt="Yogurt app"
-            class="img-fluid rounded"
-          />
-        </div>
-        <div class="col-sm-6 justify-content-start app-content">
-          <h2 class="mb-3">Yogurt App</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
-            eos eveniet alias temporibus deserunt veritatis minima fugiat
-            explicabo eum dolore.
-          </p>
-          <button class="app-button button-1 my-5">Launch Yogurt App</button>
+        <div class="col-lg-4 mt-5">
+          <div class="app-photo">
+            <img
+              src="images/github.png"
+              alt="Github user search"
+              class="img-fluid rounded shadow p-2 border border-dark border-3"
+            />
+          </div>
+          <div class="justify-content-start app-content">
+            <h2 class="my-3">Github Search</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis quia, dignissimos nam ratione veniam quibusdam porro
+              omnis quam vel eos eveniet alias temporibus deserunt veritatis
+              minima fugiat explicabo eum dolore.
+            </p>
+            <form
+              action="https://glowing-sprite-f2375f.netlify.app/"
+              target="_blank"
+            >
+              <button class="app-button button-1 my-5">
+                Github User Search App
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
