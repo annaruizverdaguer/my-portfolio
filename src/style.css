@@ -86,6 +86,22 @@ h3 {
   text-decoration: none;
 }
 
+.more-info-button,
+.less-info-button {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  border: 0px;
+  margin: 5px;
+  padding: 20px 25px;
+  border-radius: 50px;
+  box-shadow: var(--box-shadow);
+}
+
+.more-info-button:hover,
+.less-info-button:hover {
+  opacity: 0.8;
+}
+
 .about-me-paragraph {
   margin: 30px 0;
 }
