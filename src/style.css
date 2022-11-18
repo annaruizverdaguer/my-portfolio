@@ -136,3 +136,12 @@ h3 {
 #contact-me:hover {
   text-decoration: underline;
 }
+
+.bubble {
+  background-color: var(--dark-color-2);
+  color: var(--primary-color);
+  padding: 2px 8px;
+  margin: 2px;
+  border-radius: 30px;
+  min-width: 100px;
+}
