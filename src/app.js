@@ -1,3 +1,41 @@
+const jobInformation = [
+  {
+    corporation: "Scytl",
+    title: "QA Intern",
+    duration: "March 2018 - October 2018",
+    characteristics: [
+      "Internship for 4 months and later on full time employee",
+      "Developed automated testing suits with Java, Selenium and Gherkin",
+      "Manual product testing, verification and bug tracking",
+    ],
+  },
+  {
+    corporation: "Telescope",
+    title: "QA Test Engineer",
+    duration: "October 2018 - April 2021",
+    characteristics: [
+      "Start up company that helped me learn a lot",
+      "Manual product testing, verification and bug tracking",
+      "Developed automated testing suits with Ruby, Watir and Gherkin",
+      "Learned about Jenkins Pipelines to run tests remotely",
+      "Used Python scripts to automate some backend and data base steps",
+      "Learned about Postman and Newman to automate some backend testing suits",
+    ],
+  },
+  {
+    corporation: "Wallapop",
+    title: "QA Engineer",
+    duration: "April 2021 - present",
+    characteristics: [
+      "Big corporation for second hand goods market very used in Spain",
+      "Manual product testing, verification and bug tracking",
+      "Big learnings on Agile methodologies and processes",
+      "Shifting QA position to the left, more dedicated to risk assessment and product definition",
+      "Test automation efforts made on mobile apps with Gherkin, Java and Appium",
+    ],
+  },
+];
+
 function renderProjects() {
   let element = document.querySelector(".projects-info");
   element.innerHTML = ``;
@@ -118,6 +156,42 @@ function hideProjects() {
         </div>`;
 }
 
+function addActiveClassToJobButton(job) {
+  const jobButtons = document.querySelectorAll(".corporation");
+  jobButtons.forEach(function (jobButton) {
+    if (jobButton.classList.contains("job-active")) {
+      jobButton.classList.remove("job-active");
+    }
+    if (jobButton.innerHTML == job) {
+      jobButton.classList.add("job-active");
+    }
+  });
+}
+
+function showJobInfo(job) {
+  addActiveClassToJobButton(job);
+  const jobTitleElement = document.querySelector(".job-title");
+  const jobDurationElement = document.querySelector(".job-duration");
+  const jobCharacteristicsElement = document.querySelector(
+    ".job-characteristics"
+  );
+  jobInformation.map(function (el) {
+    if (el.corporation == job) {
+      jobTitleElement.innerHTML = `${el.title} <span class="text-highlight">@${el.corporation}</span>`;
+      jobDurationElement.innerHTML = el.duration;
+      let characteristicsString = "";
+      el.characteristics.forEach(function (char) {
+        characteristicsString =
+          characteristicsString +
+          `<i class="fa-solid fa-greater-than job-list-icon"></i> ${char}. <br />`;
+      });
+      jobCharacteristicsElement.innerHTML = characteristicsString;
+    }
+  });
+}
+
+// ---------------- MAIN -----------------
+
 let contactButtons = document.querySelectorAll(".contact-toggle");
 contactButtons.forEach(function (button) {
   button.addEventListener("click", function (e) {
@@ -144,5 +218,8 @@ container.addEventListener("click", function (e) {
     e.target.classList.contains("less-info-icon")
   ) {
     hideProjects();
+  }
+  if (e.target.classList.contains("corporation")) {
+    showJobInfo(e.target.innerHTML);
   }
 });

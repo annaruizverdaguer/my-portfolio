@@ -9,8 +9,9 @@
       content="Hi there! I'm Anna and I'm learning web development. Come in and take a look at my projects :D"
     />
     <title>Anna Ruiz Verdaguer's personal website</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap"
       rel="stylesheet"
     />
     <link
@@ -25,7 +26,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body onload="javascript:showJobInfo('Wallapop')">
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
       <div class="container-fluid px-5">
         <a class="navbar-brand" href="index.html"
@@ -36,7 +37,7 @@
             height="24"
             class="d-inline-block align-text-top"
           ></i>
-          Anna Ruiz Verdaguer</a
+          anna ruiz</a
         >
         <button
           class="navbar-toggler"
@@ -56,15 +57,29 @@
             <a class="nav-link active" aria-current="page" href="cv.html"
               >Experience</a
             >
-            <a class="nav-link" href="hobbies.html">Hobbies</a>
           </div>
         </div>
       </div>
     </nav>
     <div class="container">
-      <h2>[WIP ⚠️]</h2>
-      <h1>Anna Ruiz</h1>
-      <h3>👩‍💻 Front-end development apprentice, based in Barcelona.</h3>
+      <div class="main-info">
+        <h1>work experience</h1>
+        <h3>My journey in tech industry</h3>
+      </div>
+      <div class="cv">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="corporation">Wallapop</div>
+            <div class="corporation">Telescope</div>
+            <div class="corporation">Scytl</div>
+          </div>
+          <div class="col-md-10">
+            <div class="job-title"></div>
+            <div class="job-duration"></div>
+            <div class="job-characteristics"></div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="contact-footer">
       <div class="contact-content d-none">

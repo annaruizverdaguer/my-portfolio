@@ -2,6 +2,7 @@
   --primary-color: #5f85db;
   --secondary-color: #4ecca3;
   --light-color: #eeeeee;
+  --gray-color: #6c727a;
   --dark-color-1: #393e46;
   --dark-color-2: #26282b;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -26,16 +27,25 @@ h3 {
 }
 
 h1 {
-  font-size: 96px;
+  font-size: 72px;
+  font-family: "Major Mono Display", monospace;
+  font-weight: bold;
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 30px;
+  font-weight: lighter;
 }
 
 h3 {
   font-size: 24px;
-  opacity: 0.7;
+  opacity: 0.6;
+  font-weight: lighter;
+}
+
+h4,
+p {
+  font-weight: lighter;
 }
 
 .main-info {
@@ -48,10 +58,12 @@ h3 {
 
 .navbar-brand {
   color: var(--primary-color);
+  font-family: "Major Mono Display", monospace;
 }
 
 .nav-link {
   color: var(--secondary-color);
+  font-weight: lighter;
 }
 
 .active {
@@ -186,9 +198,67 @@ h3 {
   filter: grayscale(0%);
 }
 
+.project-picture {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid var(--secondary-color);
+  transition: 0.5s ease-in-out;
+}
+
+.project-picture:hover {
+  border: 2px solid var(--primary-color);
+  padding: 6px;
+}
+
 .text-highlight {
   color: var(--secondary-color);
   font-weight: bold;
+}
+
+.cv {
+  max-width: 800px;
+  margin: 5px auto;
+  padding: 10px;
+  text-align: left;
+}
+
+.corporation {
+  padding: 10px;
+  border-left: 2px solid var(--gray-color);
+  transition: 0.3s ease-in-out;
+}
+
+.corporation:hover {
+  background-color: var(--gray-color);
+  cursor: pointer;
+}
+
+.job-title {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 0px 2px 0px;
+}
+
+.job-duration {
+  font-size: 12px;
+  font-weight: lighter;
+  padding: 0px 0px 15px 0px;
+}
+
+.job-list-icon {
+  color: var(--primary-color);
+  font-size: 12px;
+  margin: 10px 0px;
+}
+
+.job-characteristics {
+  font-weight: lighter;
+}
+
+.job-active {
+  border-left: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 @media (max-width: 992px) {
@@ -196,10 +266,10 @@ h3 {
     padding: 50px 0px;
   }
   h1 {
-    font-size: 48px;
+    font-size: 40px;
   }
   h2 {
-    font-size: 30px;
+    font-size: 25px;
   }
   h3 {
     font-size: 20px;
@@ -210,5 +280,15 @@ h3 {
   .about-me-paragraph {
     width: 100%;
     margin: 0px auto;
+  }
+  .corporation {
+    display: inline-block;
+    border-left: 0px;
+    border-bottom: 2px solid var(--gray-color);
+    transition: 0.3s ease-in-out;
+  }
+  .job-active {
+    border-bottom: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
   }
 }
