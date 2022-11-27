@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anna Ruiz Verdaguer personal website</title>
+    <meta
+      name="description"
+      content="Hi there! I'm Anna and I'm learning web development. Come in and learn more about me."
+    />
+    <title>About Anna Ruiz Verdaguer</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap"
@@ -25,7 +29,7 @@
   <body>
     <nav class="navbar navbar-expand-lg sticky-top navbar-dark">
       <div class="container-fluid px-5">
-        <a class="navbar-brand" href="index.html"
+        <a class="navbar-brand" href="index.html" title="Homepage"
           ><i
             class="fa-solid fa-laptop-code"
             alt="Logo"
@@ -48,11 +52,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link active" aria-current="page" href="about-me.html"
+            <a class="nav-link" href="index.html" title="Homepage">Home</a>
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="about-me.html"
+              title="About me page"
               >About</a
             >
-            <a class="nav-link" href="cv.html">Experience</a>
+            <a class="nav-link" href="cv.html" title="Work experience page"
+              >Experience</a
+            >
           </div>
         </div>
       </div>
@@ -98,7 +108,7 @@
           <div class="app-photo">
             <img
               src="images/pasapalabra.png"
-              alt="Pasapalabra"
+              alt="Pasapalabra Game"
               class="project-picture"
             />
           </div>
@@ -222,6 +232,14 @@
             </form>
           </div>
         </div>
+      </div>
+      <div class="git-repo-footer">
+        <p>Designed & built by Anna Ruiz Verdaguer</p>
+        <a
+          href="https://github.com/annaruizverdaguer/my-portfolio"
+          target="_blank"
+          ><i class="fa-brands fa-github git-repo-link"></i
+        ></a>
       </div>
     </div>
     <div class="contact-footer">
