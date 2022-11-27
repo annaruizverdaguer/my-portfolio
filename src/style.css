@@ -281,6 +281,10 @@ p {
     width: 100%;
     margin: 0px auto;
   }
+  .my-picture {
+    width: 90%;
+    margin: 20px 0px;
+  }
   .corporation {
     display: inline-block;
     border-left: 0px;
