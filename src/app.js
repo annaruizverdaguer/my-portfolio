@@ -75,7 +75,7 @@ function renderProjects() {
       <div class="col-lg-4 col-md-6 mt-5">
         <div class="app-photo">
           <img
-            src="images/weather-app.png"
+            src="images/weather-forecast.png"
             alt="Weather app"
             class="img-fluid rounded shadow p-2 border border-dark border-3"
           />
@@ -85,18 +85,19 @@ function renderProjects() {
           <p>Go and check if you need to carry an umbrella!</p>
           <div class="bubble">HTML</div>
           <div class="bubble">CSS</div>
-          <div class="bubble">JS Vanilla</div>
+          <div class="bubble">JS</div>
+          <div class="bubble">React</div>
           <div class="bubble">Netlify</div>
           <div class="bubble">Github</div>
           <br />
           <form
-            action="https://lively-scone-575ed6.netlify.app/"
+            action="https://unique-seahorse-565ed4.netlify.app/"
             target="_blank"
           >
             <button class="app-button button-1 mt-5">Launch Weather App</button>
           </form>
           <form
-            action="https://github.com/annaruizverdaguer/weather-app"
+            action="https://github.com/annaruizverdaguer/weather-react"
             target="_blank"
           >
             <button class="button-3 mt-3">Check Github Repo</button>
